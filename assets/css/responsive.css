@@ -64,13 +64,13 @@ Table of Contents
 @media(min-width: 1024px) {
 
 	.featured-works .item {
-		margin-bottom: 120px;
+		margin-bottom: 100px;
 		position: relative;
-		width: 45%;
+		width: 35%;
 	}
 
 	.featured-works .item-img {
-		height: 670px;
+		height: 500px;
 	}
 
 	.featured-works .item-title {
@@ -109,12 +109,12 @@ Table of Contents
 	}
 
 	.featured-works a:nth-of-type(3) .item-img {
-		height: 470px;
+		height: 350px;
 	}
 
 	.featured-works a:nth-of-type(3) .item {
 		margin-left: 200px;
-		width: 66%;
+		width: 58%;
 	}
 
 	.featured-works a:nth-of-type(3) .item .item-title {
