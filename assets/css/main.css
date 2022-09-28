@@ -36,10 +36,20 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 }
+.line{
+	width: 2px;
+	height: 35px;
+	background-color: rgb(86, 86, 86);
+}
 
 a {
 	text-decoration: none;
 	transition: all .2s ease-in-out;
+}
+
+.step_p{
+	width: 500px;
+	display: flex;
 }
 
 .btn {
@@ -307,7 +317,7 @@ a {
 .blog-post .entry-header {
 	margin: 56px auto 49px auto;
 	text-align: center;
-	width: 51%;
+
 }
 
 .blog-post .entry-title {
@@ -843,4 +853,11 @@ a {
 
 .pad_b{
 	padding-bottom: 25px;
+}
+
+.pricing{
+
+	display: block;
+	text-align: center;
+	background-color: rgb(236, 236, 236);
 }
