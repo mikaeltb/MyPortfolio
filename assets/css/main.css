@@ -803,13 +803,11 @@ a {
 }
 
 .img-full {
-	height: 600px;
 	width: 100%;
 }
 
 .img-halved .item {
 	float: left;
-	height: 670px;
 	width: 48.75%;
 }
 
