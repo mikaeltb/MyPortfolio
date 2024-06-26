@@ -797,11 +797,18 @@ a {
 	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1.9;
-	margin-top: 140px ;
+	margin-top: 80px ;
 	margin-bottom: 40px;
 	width: 60%;
 }
-
+.single-project .fullinfo {
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.9;
+	margin-top: 80px ;
+	margin-bottom: 40px;
+	width: 80%;
+}
 .img-full {
 	width: 100%;
 }
@@ -809,15 +816,18 @@ a {
 .img-halved .item {
 	float: left;
 	width: 48.75%;
+	padding-bottom: 40px
 }
 
 .content-halved .item{
 	float: left;
 	width: 48.75%;
 	padding-right: 40px;
+	
 }
 .img-halved .item:nth-of-type(1) {
 	margin-right: 2.5%;
+
 }
 
 .next {
