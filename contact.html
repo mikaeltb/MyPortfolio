@@ -1,131 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Metas -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Kmichael - A designer & web developer</title>
-	<meta name="description" content="Kmichael - A designer & web developer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kmichael - Designer & Web Developer</title>
+    <meta name="description" content="Contact Kmichael - Designer & Web Developer">
 
-	<!-- External CSS -->
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="assets/css/themify-icons.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/colors.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
-
-	<!-- Favicon -->
-	<link rel="icon" href="assets/img/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    
+    <style>
+        input, textarea {
+            @apply border-gray-300 rounded-md shadow-sm;
+        }
+        
+        input:focus, textarea:focus {
+            @apply ring-cyan-500 border-cyan-500;
+        }
+    </style>
 </head>
-<body>
+<body class="min-h-screen bg-gray-50 font-poppins">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img class="h-8 w-auto" src="assets/img/logo.svg" alt="Kmichael Logo">
+                    </a>
+                </div>
+                 <nav class="  md:flex md:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        Home
+                    </a>
+                    <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        About
+                    </a>
+                    <a href="hireme.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        Hire me
+                    </a>
+                    <a href="contact.html" class="text-cyan-600 hover:text-cyan-700 px-3 py-2 text-sm font-medium border-b-2 border-cyan-600">
+                        Contact
+                    </a>
+                </nav>
+                <div class="flex md:hidden">
+                    <button
+                        type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500"
+                        aria-expanded="false"
+                        id="mobile-menu-button"
+                    >
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<!-- ========== Header ========== -->
+    <!-- Main Content -->
+    <main class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                        <span class="block text-cyan-600">Let's work together</span>
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">
+                        Have a project in mind? Fill out the form below and I'll get back to you as soon as possible.
+                    </p>
+                </div>
 
-	<header class="main-header">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-12">
+                    <form 
+                        action="https://formspree.io/f/moqzvapa" 
+                        method="POST" 
+                        class="space-y-6"
+                    >
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">
+                                    Name <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required
+                                    class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm p-2"
+                                    placeholder="Your name"
+                                />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">
+                                    Email <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm p-2"
+                                    placeholder="your.email@example.com"
+                                />
+                            </div>
+                        </div>
 
-		<div class="container">
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="business" class="block text-sm font-medium text-gray-700">
+                                    Subject
+                                </label>
+                                <input
+                                    type="text"
+                                    name="business"
+                                    id="business"
+                                    class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm p-2"
+                                    placeholder="Project subject"
+                                />
+                            </div>
+                            <div>
+                                <label for="phone-number" class="block text-sm font-medium text-gray-700">
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    name="phone-number"
+                                    id="phone-number"
+                                    class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm p-2"
+                                    placeholder="Your phone number"
+                                />
+                            </div>
+                        </div>
 
-			<a href="index.html">
-				<img src="assets/img/logo.svg" class="logo" alt="">
-			</a>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">
+                                Message <span class="text-red-500">*</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm p-2"
+                                placeholder="Tell us a bit about your project"
+                            ></textarea>
+                        </div>
 
-			<a href="#" class="open-nav">
-				<i></i>
-			</a>
+                        <div class="flex justify-end">
+                            <button
+                                type="submit"
+                                class="inline-flex items-center rounded-md bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                            >
+                                <i data-lucide="send" class="mr-2 h-5 w-5"></i>
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
-			<div class="clearfix"></div>
+                <!-- Contact Information Cards -->
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm text-center">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mx-auto mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Email</h3>
+                        <p class="mt-2 text-gray-600">
+                            <a href="mailto:michaeltb.gd@gmail.comm" class="text-cyan-600 hover:text-cyan-700">
+                                michaeltb.gd@gmail.com
+                            </a>
+                        </p>
+                    </div>
 
-		</div> <!-- /.container -->
+                    <div class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm text-center">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mx-auto mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Phone</h3>
+                        <p class="mt-2 text-gray-600">
+                            <a href="tel:+1234567890" class="text-cyan-600 hover:text-cyan-700">
+                                +1 ((972) 371 8483)
+                            </a>
+                        </p>
+                    </div>
 
-	</header> <!-- /.main-header -->
-	
+                    <div class="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm text-center sm:col-span-2 lg:col-span-1">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mx-auto mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Location</h3>
+                        <p class="mt-2 text-gray-600">
+                            Silver Spring, Maryland
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-	<!-- ========== Main ========== -->
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="flex items-center">
+                    <img src="assets/img/logo.svg" alt="Kmichael Logo" class="h-8 w-auto">
+                    <p class="ml-3 text-base text-gray-500">
+                        © <script>document.write(new Date().getFullYear())</script> All rights reserved
+                    </p>
+                </div>
+                <div class="mt-8 flex space-x-6 md:mt-0">
+                    <a href="https://github.com/KmichaelT" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://www.behance.net/kinfemibekele" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">Behance</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22 7h-7V2H9v5H2v15h20V7zM9 13.5c0 .8-.7 1.5-1.5 1.5H5v3H3V7h4.5C8.3 7 9 7.7 9 8.5v5zm5 2.5h-3v3h-2V7h5c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3zm8 3h-6v-3.5c0-.8.7-1.5 1.5-1.5H20v-1h-4V9h4.5c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5H20v1h2v2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<main class="contact">
-		
-		<div class="container">
-			
-			<h1>Let's work togather</h1>
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 transition-opacity" id="mobile-menu-overlay">
+        <div class="fixed right-0 top-0 bottom-0 w-64 bg-white shadow-lg transform transition-transform">
+            <div class="p-4 flex justify-end">
+                <button class="text-gray-600 hover:text-gray-900" id="close-mobile-menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="px-4 py-2">
+                <ul class="space-y-4">
+                    <li>
+                        <a href="index.html" class="block text-gray-600 hover:text-gray-900 font-medium">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hireme.html" class="block text-gray-600 hover:text-gray-900 font-medium">
+                            Hire me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block text-cyan-600 hover:text-cyan-700 font-medium">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="px-4 py-6 mt-6 border-t border-gray-200">
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="https://github.com/KmichaelT" class="text-gray-600 hover:text-gray-900">
+                            <i data-lucide="github" class="h-5 w-5"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/kinfemibekele" class="text-gray-600 hover:text-gray-900">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M22 7h-7V2H9v5H2v15h20V7zM9 13.5c0 .8-.7 1.5-1.5 1.5H5v3H3V7h4.5C8.3 7 9 7.7 9 8.5v5zm5 2.5h-3v3h-2V7h5c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3zm8 3h-6v-3.5c0-.8.7-1.5 1.5-1.5H20v-1h-4V9h4.5c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5H20v1h2v2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-			<form   action="https://formspree.io/f/moqzvapa"  method="POST" class="contact-form">
-					
-				<input  name="name" placeholder="Name *" type="text" required>
-				<input  name="email" placeholder="Email *" type="email" required>
-				<input  name="business" placeholder="Subject" type="text">
-				<input  name="phone-number" placeholder="Phone Number" type="tel">
-				<textarea name="message" placeholder="Tell us a bit about your project" required></textarea>
-				<input type="submit" value="Submit">
-				<div class="clearfix"></div>
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 
-			</form> <!-- /.contact-form -->
-
-		</div> <!-- /.container -->
-
-		<div class="contact-info">
-			
-			<div class="container">
-				
-			
-
-			
-
-				<div class="clearfix"></div>
-
-			</div> <!-- /.container -->
-
-		</div> <!-- /.contact-info -->
-
-	</main> <!-- /.contact -->
-
-	<footer class="footer-default">
-
-		<div class="container">
-
-			<p class="copyright"><i class="far fa-copyright"></i> all rights reserved</p>
-
-			<ul class="follow-us-links">
-				<li><a href="https://www.linkedin.com/in/kmichaeltb/"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://github.com/KmichaelT"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.behance.net/kinfemibekele"><i class="fab fa-behance"></i></a></li>
-			</ul> 
-
-			<div class="clearfix"></div>
-
-		</div> <!-- /.container -->
-
-	</footer> <!-- /.footer-default -->
-
-	<div class="aside-navigation-overlay">
-		
-		<div class="aside-navigation">
-			
-			<a href="#" class="close-nav"><i class="ti-close"></i></a>
-
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="hireme.html">Hire me</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</nav>
-
-			<ul class="social-icons">
-				<li><a href="https://www.linkedin.com/in/kmichaeltb/"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://github.com/KmichaelT"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.behance.net/kinfemibekele"><i class="fab fa-behance"></i></a></li>
-			</ul>
-	
-		</div> <!-- /.aside-navigation -->
-
-	</div> <!-- /.aside-navigation-overlay -->
-
-	<script src="assets/js/main.js"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const closeButton = document.getElementById('close-mobile-menu');
+            
+            if (menuButton && mobileMenuOverlay && closeButton) {
+                menuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    mobileMenuOverlay.classList.toggle('hidden');
+                });
+                
+                closeButton.addEventListener('click', function() {
+                    mobileMenuOverlay.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

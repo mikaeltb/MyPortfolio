@@ -1,146 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Metas -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Bolttek LLC - Brand Identity and Website Project</title>
-	<meta name="description" content="Case study: Logo design featuring an eagle and 'B', stationary design, and Next.js website development for Bolttek LLC, a cybersecurity solutions provider">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolttek LLC - Brand Identity and Website Project | Michael Bekele</title>
+    <meta name="description" content="Case study: Logo design featuring an eagle and 'B', stationary design, and Next.js website development for Bolttek LLC, a cybersecurity solutions provider">
 
-	<!-- External CSS -->
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="assets/css/themify-icons.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/colors.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
-
-	<!-- Favicon -->
-	<link rel="icon" href="assets/img/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
 </head>
-<body>
 
-	<!-- ========== Header ========== -->
+<body class="bg-gray-50 text-gray-900 font-poppins">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img class="h-8 w-auto" src="assets/img/logo.svg" alt="Michael Bekele Logo">
+                         
+                    </a>
+                </div>
+                 <nav class="  md:flex md:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        Home
+                    </a>
+                    <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        About
+                    </a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        Contact
+                    </a>
+                </nav>
+ 
+    </header>
 
-	<header class="main-header">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-white to-gray-100 pt-16 pb-12 sm:pt-24 sm:pb-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-7xl text-center">
+                <div class="flex justify-center mb-6">
+                    <span class="inline-flex items-center rounded-full bg-cyan-100 px-3 py-1 text-sm font-medium text-cyan-800">
+                        <i data-lucide="briefcase" class="h-4 w-4 mr-1"></i>
+                        Case Study
+                    </span>
+                </div>
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
+                    Bolttek LLC
+                </h1>
+                <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+                    A comprehensive brand identity and website for a veteran-owned cybersecurity solutions provider
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center gap-3">
+                    <span class="inline-flex items-center rounded-md bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                        <i data-lucide="palette" class="h-4 w-4 mr-1"></i>
+                        Logo Design
+                    </span>
+                    <span class="inline-flex items-center rounded-md bg-purple-50 px-3 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+                        <i data-lucide="file-text" class="h-4 w-4 mr-1"></i>
+                        Stationary Design
+                    </span>
+                    <span class="inline-flex items-center rounded-md bg-green-50 px-3 py-1 text-sm font-medium text-green-700 ring-1 ring-inset ring-green-700/10">
+                        <i data-lucide="code" class="h-4 w-4 mr-1"></i>
+                        Website Development (Next.js)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div class="container">
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-7xl">
+        <!-- Project Image -->
+        <div class="relative rounded-2xl overflow-hidden shadow-xl mb-16">
+            <img src="assets/img/Bolttek_brand.png" alt="Bolttek LLC Project Cover" class="w-full h-auto">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+                <a href="https://www.bolttekllc.net/" target="_blank" class="inline-flex items-center rounded-md bg-cyan-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2">
+                    <i data-lucide="external-link" class="h-4 w-4 mr-2"></i>
+                    View Live Website
+                </a>
+            </div>
+        </div>
 
-			<a href="index.html">
-				<img src="assets/img/logo.svg" class="logo" alt="">
-			</a>
+        <!-- Project Overview Section -->
+        <section class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i data-lucide="info" class="h-6 w-6 text-cyan-600 mr-2"></i>
+                        Project Overview
+                    </h2>
+                    <p class="text-gray-700 mb-4">
+                        This project involved creating a comprehensive brand identity and online presence for Bolttek LLC. The goal was to develop a visual identity that reflects the company's expertise in cybersecurity, its commitment to serving both government and civilian sectors, and its core values of vigilance and patriotism.
+                    </p>
+                    <p class="text-gray-700">
+                        Bolttek LLC is a Veteran-Owned Small Business providing tailored cybersecurity solutions for government agencies and civilian clients, with a focus on surveillance, vigilance, and patriotic service.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Project Details</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-lucide="calendar" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <span class="block text-sm font-medium text-gray-900">Timeline</span>
+                                <span class="block text-sm text-gray-600">6 weeks</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="tag" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <span class="block text-sm font-medium text-gray-900">Industry</span>
+                                <span class="block text-sm text-gray-600">Cybersecurity</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="users" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <span class="block text-sm font-medium text-gray-900">Client</span>
+                                <span class="block text-sm text-gray-600">Veteran-Owned Small Business</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="globe" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <span class="block text-sm font-medium text-gray-900">Website</span>
+                                <a href="https://www.bolttekllc.net/" target="_blank" class="block text-sm text-cyan-600 hover:text-cyan-800">bolttekllc.net</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-			<a href="#" class="open-nav">
-				<i></i>
-			</a>
+        <!-- Challenge & Solution Section -->
+        <section class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-red-100 text-red-600 mb-6">
+                        <i data-lucide="alert-triangle" class="h-6 w-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h2>
+                    <p class="text-gray-700">
+                        The main challenge was to create a brand identity that conveys trust, expertise, and innovation in the cybersecurity field while also highlighting Bolttek's unique position as a Veteran-Owned Small Business. The logo needed to encapsulate the company's values and services in a modern, minimal design.
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Communicate security and vigilance visually</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Balance professional appeal for both government and civilian clients</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Create a cohesive brand system across all touchpoints</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-green-100 text-green-600 mb-6">
+                        <i data-lucide="lightbulb" class="h-6 w-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">The Solution</h2>
+                    <p class="text-gray-700">
+                        The project was executed in three phases: creating a modern logo that integrates an eagle and the letter "B", designing cohesive business stationery, and building a fast, user-friendly website using Next.js.
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Designed a dual-concept logo combining an eagle (vigilance) with the letter B</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Created a professional stationery system with business cards and letterhead</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="h-5 w-5 text-cyan-600 mr-2 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Developed a modern, responsive website using Next.js for optimal performance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-			<div class="clearfix"></div>
+        <!-- Process Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+                <i data-lucide="workflow" class="h-6 w-6 text-cyan-600 mr-2"></i>
+                Design Process
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Logo Design</h3>
+                    <p class="text-gray-700 text-sm">
+                        Created a distinctive logo that combines an eagle silhouette with the letter "B", symbolizing vigilance and security while maintaining a clean, modern aesthetic.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Stationery Design</h3>
+                    <p class="text-gray-700 text-sm">
+                        Developed a cohesive stationery system including business cards, letterhead, and envelopes that reinforce the brand identity across all physical touchpoints.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Website Development</h3>
+                    <p class="text-gray-700 text-sm">
+                        Built a modern, responsive website using Next.js that showcases Bolttek's services, expertise, and values while providing an optimal user experience across all devices.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-		</div> <!-- /.container -->
+        <!-- Results Section -->
+        <section class="mb-16">
+            <div class="bg-cyan-50 rounded-2xl p-8 border border-cyan-100">
+                <div class="flex items-center mb-6">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-600 text-white mr-4">
+                        <i data-lucide="trophy" class="h-6 w-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Results & Impact</h2>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    The new brand identity and website significantly enhanced Bolttek LLC's professional image. The Next.js website provides a fast, modern platform for showcasing services and engaging potential clients.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i data-lucide="trending-up" class="h-5 w-5 text-green-600 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Brand Recognition</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Increased brand recognition in the cybersecurity sector</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i data-lucide="users" class="h-5 w-5 text-green-600 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Client Engagement</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Improved client engagement through professional presentation</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i data-lucide="zap" class="h-5 w-5 text-green-600 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Website Performance</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Fast-loading website with optimal user experience</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i data-lucide="shield" class="h-5 w-5 text-green-600 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Trust Building</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Enhanced trust signals for government and civilian clients</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="https://www.bolttekllc.net/" target="_blank" class="inline-flex items-center rounded-md bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2">
+                        <i data-lucide="external-link" class="h-5 w-5 mr-2"></i>
+                        View Live Website
+                    </a>
+                </div>
+            </div>
+        </section>
 
-	</header> <!-- /.main-header -->
+        <!-- Next Project Section -->
+        <section>
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="inline-flex items-center text-cyan-600 hover:text-cyan-800">
+                        <i data-lucide="arrow-left" class="h-5 w-5 mr-2"></i>
+                        Previous Project
+                    </a>
+                    <a href="#" class="inline-flex items-center text-cyan-600 hover:text-cyan-800">
+                        Next Project
+                        <i data-lucide="arrow-right" class="h-5 w-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="flex items-center">
+                    <img class="h-8 w-auto" src="assets/img/logo.svg" alt="Michael Bekele Logo">
+                    <p class="ml-3 text-base text-gray-500">© <script>document.write(new Date().getFullYear())</script> Michael Bekele. All rights reserved.</p>
+                </div>
+                <div class="mt-8 flex space-x-6 md:mt-0">
+                    <a href="https://github.com/KmichaelT" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://www.behance.net/kinfemibekele" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">Behance</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22 7h-7V2H9v5H2v15h20V7zM9 13.5c0 .8-.7 1.5-1.5 1.5H5v3H3V7h4.5C8.3 7 9 7.7 9 8.5v5zm5 2.5h-3v3h-2V7h5c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3zm8 3h-6v-3.5c0-.8.7-1.5 1.5-1.5H20v-1h-4V9h4.5c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5H20v1h2v2z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:michaeltb.gd@gmail.com" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">Email</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<!-- ========== Main ========== -->
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 
-	<main class="single-project">
-
-		<div class="container">
-			
-			<div class="intro">
-				
-				<h1>Bolttek LLC</h1>
-
-				<ul>
-					<li>Logo Design</li>
-					<li>Stationary Design</li>
-					<li>Website Development (Next.js)</li>
-				</ul>
-
-				<p>Bolttek LLC is a Veteran-Owned Small Business providing tailored cybersecurity solutions for government agencies and civilian clients, with a focus on surveillance, vigilance, and patriotic service.</p>
-
-				<div class="clearfix"></div>
-
-			</div> <!-- /.intro -->
-
-			<div class="img-responsive">
-				<img src="assets/img/Bolttek_brand.png" alt="Bolttek LLC Project Cover" class="img-responsive">
-			</div> 
-
-			<div class="content-halved">
-				<div class="item info">
-					<h2 class="about-heading">Project Overview</h2>
-					<p>This project involved creating a comprehensive brand identity and online presence for Bolttek LLC. The goal was to develop a visual identity that reflects the company's expertise in cybersecurity, its commitment to serving both government and civilian sectors, and its core values of vigilance and patriotism.</p>
-				</div>		
-
-				<div class="item info ">
-					<h2 class="about-heading">Challenge</h2>
-					<p>The main challenge was to create a brand identity that conveys trust, expertise, and innovation in the cybersecurity field while also highlighting Bolttek's unique position as a Veteran-Owned Small Business. The logo needed to encapsulate the company's values and services in a modern, minimal design. Additionally, the website needed to effectively showcase their services and engage potential clients.</p>
-				</div>
-
-				<div class="clearfix"></div>
-
-			</div> <!-- /.content-halved -->
-			<div class="img-full">
-				<div class="fullinfo">
-					<h2 class="about-heading">Solution</h2>
-					<p>The project was executed in three interconnected phases, each building upon the last to create a comprehensive brand presence for Bolttek LLC. Initially, a modern and minimal logo was designed, seamlessly incorporating an eagle and the letter "B" to symbolize surveillance, vigilance, and patriotism. This clever integration visually represents the company's core values and services. The logo design was followed by the development of a cohesive set of business cards, letterheads, and other stationery items, reinforcing the brand identity across all physical touchpoints. The final phase involved building a responsive, user-friendly website using Next.js, showcasing Bolttek's services and expertise while providing an engaging platform for potential clients to interact with the brand.</p>
-				</div>	
-
-				
-
-				<div class="clearfix"></div>
-
-			</div> <!-- /.content-halved -->
-
-<div class="fullinfo">
-					<h2 class="about-heading">Results</h2>
-					<p>The new brand identity and website have significantly enhanced Bolttek LLC's professional image. The logo effectively communicates the company's focus on cybersecurity and its patriotic roots, while the stationary design ensures a consistent brand presence across all touchpoints. The clever integration of the eagle and "B" in the logo has created a memorable and meaningful symbol for the company. The Next.js website provides a fast, modern platform for Bolttek to showcase their services, engage with potential clients, and establish their authority in the cybersecurity field, all while reinforcing the values of vigilance and expertise represented in their new visual identity.</p>
-				<div class="">
-					<a href="https://www.bolttekllc.net/" class="btn" target="_blank">View Live Website</a>
-				</div></div>
-			<div class="content">
-				
-				<div class="clearfix"></div>
-			</div> <!-- /.content -->
-
-		</div> <!-- /.container -->
-
-		<a href="/rct.html" class="next">
-			<h2>next</h2>
-		</a>
-
-	</main> <!-- /.single-project -->
-
-	<div class="aside-navigation-overlay">
-		
-		<div class="aside-navigation">
-			
-			<a href="#" class="close-nav"><i class="ti-close"></i></a>
-
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="hireme.html">Hire me</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</nav>
-
-			<ul class="social-icons">
-				<li><a href="https://www.linkedin.com/in/kmichaeltb/"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://github.com/KmichaelT"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.behance.net/kinfemibekele"><i class="fab fa-behance"></i></a></li>
-			</ul>
-	
-		</div> <!-- /.aside-navigation -->
-
-	</div> <!-- /.aside-navigation-overlay -->
-
-	<script src="assets/js/main.js"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openNavButton = document.querySelector('.open-nav');
+            const closeNavButton = document.querySelector('.close-nav');
+            const mobileMenu = document.querySelector('.aside-navigation-overlay');
+            
+            if (openNavButton && closeNavButton && mobileMenu) {
+                openNavButton.addEventListener('click', function() {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+                
+                closeNavButton.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,193 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Metas -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Kmichael - A designer & web developer</title>
-	<meta name="description" content="Kmichael - A designer & web developer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Michael Bekele -  Graphic Designer   -  UX/UI Designer   -  UI Developer</title>
+    <meta name="description" content="Michael Bekele -  Graphic Designer   -  UX/UI Designer   -  UI Developer specializing in brand identity, web development, and graphic design">
 
-	<!-- External CSS -->
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="assets/css/themify-icons.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/colors.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600%7CPoppins:400,500,600&display=swap" rel="stylesheet">
-
-	<!-- Favicon -->
-	<link rel="icon" href="assets/img/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900 font-poppins">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img class="h-8 w-auto" src="assets/img/logo.svg" alt="Michael Bekele Logo">
+                         
+                    </a>
+                </div>
+                <nav class="  md:flex md:space-x-8">
+                    <a href="index.html" class="text-cyan-600 hover:text-cyan-700 px-3 py-2 text-sm font-medium border-b-2 border-cyan-600">
+                        Home
+                    </a>
+                    <a href="about.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        About
+                    </a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                        Contact
+                    </a>
+                </nav>
+ 
+            </div>
+        </div>
+ 
+    </header>
 
-	<!-- ========== Header ========== -->
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-white pt-14">
+        <!-- Decorative background elements -->
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -trancyan-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="text-center">
+                    <div class="mb-8 flex justify-center">
+                        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            <span class="font-semibold text-cyan-600"> Graphic Designer   -  UX/UI Designer   -  UI Developer</span>
+                        </div>
+                    </div>
+                    <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                        👋 Hi, I'm Michael
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600 max-w-xl mx-auto">
+                        Turning Ideas into Impactful Visual Experiences. Designing with Purpose, Passion, and Pixel-Perfect Precision.
+                    </p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href="about.html" class="rounded-md bg-cyan-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600">
+                            About Me
+                        </a>
+                        <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900 flex items-center">
+                            Contact Me <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="mt-8 flex justify-center space-x-6">
+                        <a href="https://github.com/KmichaelT" class="text-gray-600 hover:text-gray-900">
+                            <span class="sr-only">GitHub</span>
+                            <i data-lucide="github" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://www.behance.net/kinfemibekele" class="text-gray-600 hover:text-gray-900">
+                            <span class="sr-only">Behance</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M22 7h-7V2H9v5H2v15h20V7zM9 13.5c0 .8-.7 1.5-1.5 1.5H5v3H3V7h4.5C8.3 7 9 7.7 9 8.5v5zm5 2.5h-3v3h-2V7h5c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3zm8 3h-6v-3.5c0-.8.7-1.5 1.5-1.5H20v-1h-4V9h4.5c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5H20v1h2v2z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:michaeltb.gd@gmail.com" class="text-gray-600 hover:text-gray-900">
+                            <span class="sr-only">Email</span>
+                            <i data-lucide="mail" class="h-6 w-6"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -trancyan-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+    </section>
 
-	<header class="main-header">
+    <!-- Featured Works Section -->
+    <section class="bg-gray-50 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center mb-16">
+                <div class="flex justify-center mb-4">
+                    <span class="inline-flex items-center rounded-full bg-cyan-100 px-3 py-1 text-sm font-medium text-cyan-800">
+                        <i data-lucide="briefcase" class="h-4 w-4 mr-1"></i>
+                        Portfolio
+                    </span>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Featured Works</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    A selection of my recent design and development projects
+                </p>
+            </div>
+            
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3 sm:gap-y-16">
+                <!-- Project 1 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="ria.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/REA.png" alt="REA" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="palette" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">Graphic Design</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                REA
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Brand identity and visual design for REA
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="lia.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/lia_hero.png" alt="Love In Action" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="palette" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">Graphic Design</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                Love In Action
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Visual identity for a non-profit organization
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="Fuel.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/fuel/feul cover.jpg" alt="Fuel" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="palette" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">Graphic Design</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                Fuel
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Brand identity and marketing materials
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="donor's_dashboard.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/LIA_dashboard/mockup.png" alt="Donor's Dashboard" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="layout" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">UX/UI Design</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                Donor's Dashboard
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                User interface design for donation management
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Project 5 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="bolttek.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/boltec cover.png" alt="Bolttek" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="code" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">Design & Web Development</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                Bolttek
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Brand identity and website for a cybersecurity company
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Project 6 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
+                    <a href="rct.html" class="w-full">
+                        <div class="relative w-full overflow-hidden">
+                            <img src="assets/img/RCT/menu_cover@100x.png" alt="RCT" class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <span class="inline-flex items-center rounded-full bg-white/90 px-2.5 py-1 text-xs font-medium text-gray-900">
+                                    View Project
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="pen-tool" class="h-4 w-4 text-cyan-600"></i>
+                                <span class="text-sm font-medium text-cyan-600">Logo Design</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+                                RCT
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-600">
+                                Logo and brand identity design
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-		<div class="container">
+    <!-- Skills Section -->
+    <section class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center mb-16">
+                <div class="flex justify-center mb-4">
+                    <span class="inline-flex items-center rounded-full bg-cyan-100 px-3 py-1 text-sm font-medium text-cyan-800">
+                        <i data-lucide="zap" class="h-4 w-4 mr-1"></i>
+                        Expertise
+                    </span>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Skills</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Specialized in creating beautiful, functional designs and experiences
+                </p>
+            </div>
+            
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                <div class="flex flex-col items-center rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-6">
+                        <i data-lucide="palette" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Graphic Design</h3>
+                    <p class="mt-4 text-sm text-gray-600">
+                        Creating visual concepts that inspire, inform, and captivate consumers
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-6">
+                        <i data-lucide="layout" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">UX/UI Design</h3>
+                    <p class="mt-4 text-sm text-gray-600">
+                        Designing intuitive interfaces and seamless user experiences
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-6">
+                        <i data-lucide="code" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Web Development</h3>
+                    <p class="mt-4 text-sm text-gray-600">
+                        Building responsive, modern websites with the latest technologies
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-cyan-600 mb-6">
+                        <i data-lucide="pen-tool" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900">Brand Identity</h3>
+                    <p class="mt-4 text-sm text-gray-600">
+                        Developing cohesive visual systems that communicate brand values
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<a href="index.html">
-				<img src="assets/img/logo.svg" class="logo" alt="">
-			</a>
-
-			<a href="#" class="open-nav">
-				<i></i>
-			</a>
-
-			<div class="clearfix"></div>
-
-		</div> <!-- /.container -->
-
-	</header> <!-- /.main-header -->
-
-
-	<!-- ========== Main ========== -->
-
-	<main>
-		
-		<div class="container">
-
-			<div class="hero">
-				
-				<h1>👋 Hi, I'm Michael, <br>  a designer✏️ &amp; <br>a web developer 💻
-
-					
-					</h1>
-
-				<ul class="social-links">
-					<li><a href="https://www.linkedin.com/in/kmichaeltb/">Linkedin</a></li>
-				<li><a href="https://github.com/KmichaelT">Github</a></li>
-				<li><a href="https://www.behance.net/kinfemibekele">Behance</a></li>
-				
-				</ul>
-
-			</div> <!-- /.hero -->
-
-			<div class="featured-works">
-
-				
-				
-				<a href="donor's_dashboard.html">
-					<div class="item">
-						<div class="item-img">
-							<img src="assets/img/LIA_dashboard/thumb.png" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">Donor's Dashboard</h2>
-						<h3 class="item-category">UX/UI</h3>
+    <!-- CTA Section -->
+	<section class="bg-cyan-50 border-y border-cyan-100">
+		<div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+			<div class="mx-auto max-w-2xl text-center">
+				<div class="flex justify-center mb-6">
+					<div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-600 text-white">
+						<i data-lucide="message-square" class="h-6 w-6"></i>
 					</div>
-				</a>
- <a href="/bolttek.html">
-					<div class="item">
-						<div class="item-img">
-							<img src="assets/img/bltk.png" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">Bolttek</h2>
-						<h3 class="item-category">Design & Web Development</h3>
-					</div>
-				</a><div class="clearfix"></div>
-				<a href="rct.html">
-					<div class="item ">
-						<div class="item-img">
-							<img src="assets/img/RCT/menu_cover@100x.png" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">RCT</h2>
-						<h3 class="item-category">Logo Design</h3>
-					</div>
-				</a>
-
-				
-
-				<a href="https://kmichaelt.github.io/WATSZWTHR/">
-					<div class="item">
-						<div class="item-img">
-							<img src="assets/img/weather-01.jpg" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">Watszwther</h2>
-						<h3 class="item-category">Website</h3>
-					</div>
-				</a>
-
-				
-
-				<div class="clearfix"></div>
-
-				<a href="Fuel.html">
-					<div class="item">
-						<div class="item-img">
-							<img src="assets/img/fuel/feul cover.jpg" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">Fuel</h2>
-						<h3 class="item-category">Graphic Design</h3>
-					</div>
-				</a>
-				<!--<a href="single-project.html">
-					<div class="item">
-						<div class="item-img">
-							<img src="assets/img/image-placeholder.jpg" alt="" class="img-cover">
-						</div>
-						<h2 class="item-title">rouge<br> magazine</h2>
-						<h3 class="item-category">publishing</h3>
-					</div>
-				</a> -->
-
-			</div> <!-- /.featured-works -->
-
-			<div class="cta">
-				<h1>Let's work togather</h1>
-				<a href="contact.html" class="btn">contact me</a>
+				</div>
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Let's work together</h2>
+				<p class="mt-6 text-lg leading-8 text-gray-600">
+					Have a project in mind? I'd love to help bring your vision to life with creative design solutions.
+				</p>
+				<div class="mt-10 flex items-center justify-center gap-x-6">
+					<a href="contact.html" class="rounded-md bg-cyan-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600">
+						Contact me
+					</a>
+					<a href="about.html" class="text-sm font-semibold leading-6 text-gray-900 flex items-center">
+						Learn more about me <i data-lucide="arrow-right" class="h-4 w-4 ml-1"></i>
+					</a>
+				</div>
 			</div>
+		</div>
+	</section>
 
-		</div> <!-- /.container -->
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="flex items-center">
+                    <img class="h-8 w-auto" src="assets/img/logo.svg" alt="Michael Bekele Logo">
+                    <p class="ml-3 text-base text-gray-500">© <script>document.write(new Date().getFullYear())</script> Michael Bekele. All rights reserved.</p>
+                </div>
+                <div class="mt-8 flex space-x-6 md:mt-0">
+                    <a href="https://github.com/KmichaelT" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://www.behance.net/kinfemibekele" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">Behance</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M22 7h-7V2H9v5H2v15h20V7zM9 13.5c0 .8-.7 1.5-1.5 1.5H5v3H3V7h4.5C8.3 7 9 7.7 9 8.5v5zm5 2.5h-3v3h-2V7h5c1.7 0 3 1.3 3 3v2c0 1.7-1.3 3-3 3zm8 3h-6v-3.5c0-.8.7-1.5 1.5-1.5H20v-1h-4V9h4.5c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5H20v1h2v2z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:michaeltb.gd@gmail.com" class="text-gray-600 hover:text-gray-900">
+                        <span class="sr-only">Email</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	</main> <!-- /main -->
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 
-	<footer class="footer-default footer-default-border">
-
-		<div class="container">
-
-			<p class="copyright"><i class="far fa-copyright"></i> all rights reserved</p>
-
-			<ul class="follow-us-links">
-				<li><a href="https://www.linkedin.com/in/kmichaeltb/"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://github.com/KmichaelT"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.behance.net/kinfemibekele"><i class="fab fa-behance"></i></a></li>
-			</ul> 
-
-			<div class="clearfix"></div>
-
-		</div> <!-- /.container -->
-
-	</footer> <!-- /.footer-default -->
-
-	<div class="aside-navigation-overlay">
-		
-		<div class="aside-navigation">
-			
-			<a href="#" class="close-nav"><i class="ti-close"></i></a>
-
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="hireme.html">Hire me</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</nav>
-
-			<ul class="social-icons">
-				<li><a href="https://www.linkedin.com/in/kmichaeltb/"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://github.com/KmichaelT"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.behance.net/kinfemibekele"><i class="fab fa-behance"></i></a></li>
-			</ul>
-	
-		</div> <!-- /.aside-navigation -->
-
-	</div> <!-- /.aside-navigation-overlay -->
-
-	<script src="assets/js/main.js"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openNavButton = document.querySelector('.open-nav');
+            const closeNavButton = document.querySelector('.close-nav');
+            const mobileMenu = document.querySelector('.aside-navigation-overlay');
+            
+            if (openNavButton && closeNavButton && mobileMenu) {
+                openNavButton.addEventListener('click', function() {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+                
+                closeNavButton.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+            }
+        });
+    </script>
 </body>
 </html>

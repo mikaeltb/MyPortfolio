@@ -239,7 +239,7 @@ a {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: trancyan(-50%, -50%);
 }
 
 .team-member:hover .overlay {
@@ -600,7 +600,7 @@ a {
 	position: absolute;
 	right: -6px;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: trancyanY(-50%);
 }
 
 .hero .social-links li {
@@ -636,7 +636,7 @@ a {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: trancyan(-50%, -50%);
 	width: 28%;
 }
 
@@ -698,7 +698,7 @@ a {
 	left: 50px;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: trancyanY(-50%);
 }
 
 .aside-navigation nav ul li {
